@@ -6,18 +6,18 @@ TerrainLayer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TL_Grassy
-  m_DiffuseTexture: {fileID: 2800000, guid: d6d77018ee74c1141b9fa95d54c892bc, type: 3}
-  m_NormalMapTexture: {fileID: 2800000, guid: 41ce07a1916e7744baa97dcebee1b3c9, type: 3}
-  m_MaskMapTexture: {fileID: 0}
-  m_TileSize: {x: 16.05, y: 6.14}
+  m_Name: TL_ArenaStones
+  m_DiffuseTexture: {fileID: 2800000, guid: 56d8768464a9a7e428d6fba4a516c5ea, type: 3}
+  m_NormalMapTexture: {fileID: 2800000, guid: 98c62aa63512ea0468595fe04f043f44, type: 3}
+  m_MaskMapTexture: {fileID: 2800000, guid: b9762beb95e48a64cb018a121ba19bf2, type: 3}
+  m_TileSize: {x: 10, y: 10}
   m_TileOffset: {x: 0, y: 0}
   m_Specular: {r: 0, g: 0, b: 0, a: 0}
   m_Metallic: 0
   m_Smoothness: 0
   m_NormalScale: 1
-  m_DiffuseRemapMin: {x: 0, y: 0, z: 0, w: 0}
-  m_DiffuseRemapMax: {x: 0.21757445, y: 0.3584906, z: 0.22158149, w: 1}
+  m_DiffuseRemapMin: {x: 0, y: 0, z: 0, w: 1}
+  m_DiffuseRemapMax: {x: 0.7012578, y: 0.87196755, z: 1, w: 1}
   m_MaskMapRemapMin: {x: 0, y: 0, z: 0, w: 0}
   m_MaskMapRemapMax: {x: 1, y: 1, z: 1, w: 1}
   m_SmoothnessSource: 1

@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: 987381166714547010}
   - component: {fileID: 4776872559962365344}
   - component: {fileID: 6625033691982994765}
+  - component: {fileID: 8995495549378445188}
   m_Layer: 0
   m_Name: PF_FirstPersonPlayer
   m_TagString: Untagged
@@ -261,3 +262,17 @@ MonoBehaviour:
   maximumPushableMass: 10
   minimumPlayerSpeed: 0.5
   repeatPushDelay: 0.15
+--- !u!114 &8995495549378445188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6245289102481349171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee7b97371d8be8645ad2d0d93f4d98bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ArenaSurvival.Player.PlayerFallRespawner
+  fallThresholdY: -10
+  safeHeightOffset: 0.2

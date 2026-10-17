@@ -259,6 +259,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ArenaSurvival.Spawning.PlayerSpawner
   playerPrefab: {fileID: 6245289102481349171, guid: cfe0114b7a8d72a489f3bfe740a34083, type: 3}
   spawnPoint: {fileID: 1250950199}
+--- !u!1 &520864600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 520864601}
+  - component: {fileID: 520864602}
+  m_Layer: 0
+  m_Name: StateDemoController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &520864601
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520864600}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2115182017}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &520864602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520864600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82421500148906d42856ac0bfb4f90d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ArenaSurvival.Gameplay::ArenaSurvival.Gameplay.Debugging.StateDemoController
+  targetDoor: {fileID: 6451571593725515874}
+  targetBeacon: {fileID: 2775324400938351618}
 --- !u!1 &902631043
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,6 +402,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2115182017}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1349807325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1349807326}
+  - component: {fileID: 1349807327}
+  m_Layer: 0
+  m_Name: StateChecks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1349807326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349807325}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2115182017}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1349807327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349807325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41c4bba94d655e9448169f498fd3e7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ArenaSurvival.Gameplay::ArenaSurvival.Gameplay.Debugging.StateTransitionChecks
+  door: {fileID: 6451571593725515874}
+  beacon: {fileID: 2775324400938351618}
 --- !u!1 &1384466259
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,6 +536,39 @@ WindZone:
   m_WindTurbulence: 1
   m_WindPulseMagnitude: 0.5
   m_WindPulseFrequency: 0.01
+--- !u!1 &1839282429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1839282430}
+  m_Layer: 0
+  m_Name: InteractiveObjects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1839282430
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839282429}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6451571593725515875}
+  - {fileID: 2775324400938351619}
+  m_Father: {fileID: 2115182017}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1858204859
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,6 +649,9 @@ Transform:
   m_Children:
   - {fileID: 1250950199}
   - {fileID: 339184990}
+  - {fileID: 520864601}
+  - {fileID: 1839282430}
+  - {fileID: 1349807326}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2142073254
@@ -659,8 +787,12 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1839282430}
     m_Modifications:
+    - target: {fileID: 1001176380728283612, guid: 230ab24730d541f438343b2713a0250f, type: 3}
+      propertyPath: initialState
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4377035608831082064, guid: 230ab24730d541f438343b2713a0250f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.06
@@ -679,15 +811,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4377035608831082064, guid: 230ab24730d541f438343b2713a0250f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4377035608831082064, guid: 230ab24730d541f438343b2713a0250f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4377035608831082064, guid: 230ab24730d541f438343b2713a0250f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4377035608831082064, guid: 230ab24730d541f438343b2713a0250f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -703,20 +835,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5288612088157233556, guid: 230ab24730d541f438343b2713a0250f, type: 3}
       propertyPath: m_Name
-      value: PF_StatefulBeacon
+      value: StatefulBeacon_01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 230ab24730d541f438343b2713a0250f, type: 3}
+--- !u!114 &2775324400938351618 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1001176380728283612, guid: 230ab24730d541f438343b2713a0250f, type: 3}
+  m_PrefabInstance: {fileID: 2775324400938351617}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 543a88dce84fc854990cd0c0e0d56fab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ArenaSurvival.Gameplay::ArenaSurvival.Gameplay.Beacon.StatefulBeacon
+--- !u!4 &2775324400938351619 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4377035608831082064, guid: 230ab24730d541f438343b2713a0250f, type: 3}
+  m_PrefabInstance: {fileID: 2775324400938351617}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6451571593725515873
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1839282430}
     m_Modifications:
     - target: {fileID: 2321965117462350254, guid: 85cee89aef4ee784a88f6a7501a1020a, type: 3}
       propertyPath: m_Name
@@ -767,6 +915,22 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85cee89aef4ee784a88f6a7501a1020a, type: 3}
+--- !u!114 &6451571593725515874 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5208527631433222077, guid: 85cee89aef4ee784a88f6a7501a1020a, type: 3}
+  m_PrefabInstance: {fileID: 6451571593725515873}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9fb8796a5310ba4aaf7092a21cd5b2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ArenaSurvival.Gameplay::ArenaSurvival.Gameplay.Door.StatefulDoor
+--- !u!4 &6451571593725515875 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5338397785081218099, guid: 85cee89aef4ee784a88f6a7501a1020a, type: 3}
+  m_PrefabInstance: {fileID: 6451571593725515873}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -774,5 +938,3 @@ SceneRoots:
   - {fileID: 902631044}
   - {fileID: 2115182017}
   - {fileID: 905709955}
-  - {fileID: 6451571593725515873}
-  - {fileID: 2775324400938351617}

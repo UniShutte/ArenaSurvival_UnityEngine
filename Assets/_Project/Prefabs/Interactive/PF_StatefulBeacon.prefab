@@ -124,6 +124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4377035608831082064}
   - component: {fileID: 1001176380728283612}
+  - component: {fileID: 1430330602077092832}
   m_Layer: 0
   m_Name: PF_StatefulBeacon
   m_TagString: Untagged
@@ -166,6 +167,19 @@ MonoBehaviour:
   activeVisual: {fileID: 7980828888228212116}
   brokenVisual: {fileID: 8590359130389816253}
   initialState: 0
+--- !u!114 &1430330602077092832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5288612088157233556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d97d49e1a9ea6743b48d026b80f31f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ArenaSurvival.Gameplay::ArenaSurvival.Gameplay.Views.BeaconStateConsoleView
+  beacon: {fileID: 1001176380728283612}
 --- !u!1 &7980828888228212116
 GameObject:
   m_ObjectHideFlags: 0

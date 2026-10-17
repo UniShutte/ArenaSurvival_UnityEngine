@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5338397785081218099}
   - component: {fileID: 5208527631433222077}
+  - component: {fileID: 5432903436156297422}
   m_Layer: 0
   m_Name: PF_StatefulDoor
   m_TagString: Untagged
@@ -163,6 +164,19 @@ MonoBehaviour:
   openVisual: {fileID: 3175272445324737825}
   lockedIndicator: {fileID: 4363029297098710760}
   initialState: 0
+--- !u!114 &5432903436156297422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2321965117462350254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99405649000b0948b5b0be36a364237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ArenaSurvival.Gameplay::ArenaSurvival.Gameplay.Views.DoorStateConsoleView
+  door: {fileID: 5208527631433222077}
 --- !u!1 &3175272445324737825
 GameObject:
   m_ObjectHideFlags: 0

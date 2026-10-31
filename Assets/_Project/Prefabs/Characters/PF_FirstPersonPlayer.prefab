@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4513511775036670705}
   - component: {fileID: 5669015048143493491}
   - component: {fileID: 3266161181889543707}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -152,7 +152,8 @@ GameObject:
   - component: {fileID: 4776872559962365344}
   - component: {fileID: 6625033691982994765}
   - component: {fileID: 8995495549378445188}
-  m_Layer: 0
+  - component: {fileID: 1215283554699821722}
+  m_Layer: 8
   m_Name: PF_FirstPersonPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -276,3 +277,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ArenaSurvival.Player.PlayerFallRespawner
   fallThresholdY: -10
   safeHeightOffset: 0.2
+--- !u!114 &1215283554699821722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6245289102481349171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d90dc8932dab5645910cfc4ec166c75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ArenaSurvival.Gameplay::ArenaSurvival.Gameplay.Interaction.PlayerLeverInteractor
+  viewCamera: {fileID: 5669015048143493491}
+  interactionDistance: 2.5

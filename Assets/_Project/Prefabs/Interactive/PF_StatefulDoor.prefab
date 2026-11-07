@@ -836,7 +836,7 @@ GameObject:
   - component: {fileID: 5045657634886282620}
   - component: {fileID: 3541099035580925550}
   m_Layer: 0
-  m_Name: www (1)
+  m_Name: LockerRing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -851,11 +851,11 @@ Transform:
   m_GameObject: {fileID: 1464836606513704163}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.9822, y: 2.7232063, z: -0.023870004}
-  m_LocalScale: {x: 0.19015613, y: 0.009025444, z: 0.14773999}
+  m_LocalPosition: {x: -0.9759997, y: 0.1570114, z: -0.04774001}
+  m_LocalScale: {x: 0.63385373, y: 0.0020609142, z: 0.29547998}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5338397785081218099}
+  m_Father: {fileID: 768319199239266424}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3132940253446785783
 MeshFilter:
@@ -1313,7 +1313,6 @@ Transform:
   - {fileID: 768319199239266424}
   - {fileID: 3513676729320513002}
   - {fileID: 5150752795238120020}
-  - {fileID: 693091317729866565}
   - {fileID: 2656733612113254779}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1333,7 +1332,7 @@ MonoBehaviour:
   lockedIndicator: {fileID: 5490159301877358830}
   initialState: 0
   openAngle: 90
-  rotationSpeed: 60
+  rotationSpeed: 80
   safetyZone: {fileID: 2656733612113254779}
 --- !u!114 &5432903436156297422
 MonoBehaviour:
@@ -2554,6 +2553,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 4.37934, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 693091317729866565}
   - {fileID: 3465036408452854623}
   - {fileID: 8660834704090063942}
   - {fileID: 5997804580403027086}

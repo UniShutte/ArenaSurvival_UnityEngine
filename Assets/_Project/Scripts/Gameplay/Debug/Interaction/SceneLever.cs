@@ -1,6 +1,7 @@
 using ArenaSurvival.Gameplay.Beacon;
 using ArenaSurvival.Gameplay.Door;
 using ArenaSurvival.Gameplay.Motion;
+using ArenaSurvival.Gameplay.PhysicsLab;
 using UnityEngine;
 
 namespace ArenaSurvival.Gameplay.Interaction
@@ -15,7 +16,8 @@ namespace ArenaSurvival.Gameplay.Interaction
             DoorOpen = 1,
             BeaconPower = 2,
             BeaconBreakRepair = 3,
-            MotionPower = 4
+            MotionPower = 4,
+            CageRelease = 5
         }
 
         [Header("Action")]
@@ -23,6 +25,7 @@ namespace ArenaSurvival.Gameplay.Interaction
         [SerializeField] private StatefulDoor door;
         [SerializeField] private StatefulBeacon beacon;
         [SerializeField] private PointToPointMover mover;
+        [SerializeField] private CageReleaseController cage;
 
         [Header("Handle")]
         [SerializeField] private Transform handlePivot;
@@ -44,6 +47,8 @@ namespace ArenaSurvival.Gameplay.Interaction
                         return beacon != null && beacon.isActiveAndEnabled;
                     case LeverAction.MotionPower:
                         return mover != null && mover.isActiveAndEnabled;
+                    case LeverAction.CageRelease:
+                        return cage != null && cage.isActiveAndEnabled;
                     default:
                         return false;
                 }
@@ -64,6 +69,7 @@ namespace ArenaSurvival.Gameplay.Interaction
                     case LeverAction.BeaconPower: return beacon.CurrentState == BeaconState.Active;
                     case LeverAction.BeaconBreakRepair: return beacon.CurrentState == BeaconState.Broken;
                     case LeverAction.MotionPower: return mover.IsRunning;
+                    case LeverAction.CageRelease: return cage.HasStarted;
                     default: return false;
                 }
             }
@@ -97,6 +103,10 @@ namespace ArenaSurvival.Gameplay.Interaction
                         return IsOn ? "[E] Починить маяк" : "[E] Сломать маяк";
                     case LeverAction.MotionPower:
                         return IsOn ? "[E] Остановить механизм" : "[E] Запустить механизм";
+                    case LeverAction.CageRelease:
+                        if (cage.IsLowering) return "Клеть опускается. Повторная команда не нужна.";
+                        return cage.IsReleased ? "Клеть опущена. Для повторения начните новый Play."
+                            : "[E] Опустить клеть и выпустить шары";
                     default:
                         return "Неизвестное действие рычага.";
                 }
@@ -146,6 +156,9 @@ namespace ArenaSurvival.Gameplay.Interaction
                     break;
                 case LeverAction.MotionPower:
                     mover.ToggleRunning();
+                    break;
+                case LeverAction.CageRelease:
+                    cage.TryRelease();
                     break;
             }
         }

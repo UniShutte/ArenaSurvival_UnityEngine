@@ -153,6 +153,7 @@ GameObject:
   - component: {fileID: 6625033691982994765}
   - component: {fileID: 8995495549378445188}
   - component: {fileID: 1215283554699821722}
+  - component: {fileID: 3748230213305498688}
   m_Layer: 8
   m_Name: PF_FirstPersonPlayer
   m_TagString: Player
@@ -291,3 +292,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: ArenaSurvival.Gameplay::ArenaSurvival.Gameplay.Interaction.PlayerLeverInteractor
   viewCamera: {fileID: 5669015048143493491}
   interactionDistance: 2.5
+--- !u!114 &3748230213305498688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6245289102481349171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcb9689aa5a49bd479d229db103d7e08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ArenaSurvival.Gameplay::ArenaSurvival.Gameplay.Interaction.AimSignalInteractor
+  viewCamera: {fileID: 5669015048143493491}
+  maxDistance: 8

@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 1.35
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: cc597bc2028e3f94e81d7fa030db9a01, type: 2}
@@ -2049,7 +2049,7 @@ GameObject:
   - component: {fileID: 1763230571}
   - component: {fileID: 1763230570}
   - component: {fileID: 1763230569}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PlayerZone_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2382,8 +2382,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2031553413}
-  - component: {fileID: 2031553415}
-  - component: {fileID: 2031553414}
   m_Layer: 0
   m_Name: Lab6_Interactions
   m_TagString: Untagged
@@ -2409,44 +2407,6 @@ Transform:
   - {fileID: 1763230568}
   m_Father: {fileID: 2115182017}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2031553414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2031553412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65a16ca2d2cf18648bc2d52212b03b05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: ArenaSurvival.Gameplay::ArenaSurvival.Gameplay.Contacts.BallImpactTarget
-  indicator: {fileID: 797034506}
-  idleMaterial: {fileID: 2100000, guid: 855659b3cce27d44eb4b20801be02f16, type: 2}
-  hitMaterial: {fileID: 2100000, guid: 5a08ffb8f2f27f8489349c5bf0bd0e4d, type: 2}
-  minimumSpeed: 2
-  flashDuration: 0.5
---- !u!65 &2031553415
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2031553412}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &2034649329 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6309680608739863242, guid: 18d0e91730d99f74f85f33140697dc8d, type: 3}
@@ -2678,7 +2638,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 0.8
+    m_Strength: 0.65
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
